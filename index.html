@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid py-5 cont-nav">
+        <div class="logo">
+          <a class="navbar-brand text-white px-5 cstm-link" href="#"> <img src="media/logo@2x.png" class="w-25" alt=""> <span class="logo-cstm">Weather</span><br><span class="px-5 nav1-cstm">tagline goes here</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+              <li class="nav-item px-4">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>    
+      <div class="img-section ">
+      <div class="inputt w-100 py-5 d-flex justify-content-center align-items-center ">
+        <input type="text" id="Search" class="py-3 input-border text-white px-3" placeholder="   Find your location ...">
+        <button class="btn  btn-lg btn-cstm2">Find</button>
+      </div>
+      </div>
+      <div class="color"></div>
+      <div class="footer">
+        <div class="input">
+        <input type="text" class="py-3 input-border2 " placeholder="   Enter your Email to subscribe...">
+        <button class="btn  btn-lg btn-cstm">submit</button>
+        <p class=" py-4 px-3 p-cstm">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+      <div class="icon">
+        <a class="px-2 icon-cstm" href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+        <a class="px-2 icon-cstm" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+        <a class="px-2 icon-cstm" href="#"><i class="fa-brands fa-google-plus fa-xl"></i></a>
+        <a class="px-2 icon-cstm" href="#"><i class="fa-brands fa-pinterest-p fa-xl"></i></a>
+      </div>
+    </div>
+    
+
+    <div class="cards-cstm d-flex justify-content-evenly">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <div class="item">
+            <div class="card1" style="width: 22rem; height: 45vh;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center py-1 div-col">
+                <h5 class="card-title text-col ms-2" id="today-name">todayName</h5>
+                <div class="d-flex align-items-center">
+                  <h6 class="card-subtitle text-col me-2" id="today-num">30</h6>
+                  <span id="month-Name" class="me-2 text-col">April</span>
+                </div>
+                </div>
+                <h6 class="card-subtitle text-col py-4 ms-2" id="city-name">cityName</h6>
+                <div class="content d-flex justify-content-between align-items-center">
+                  <div class="w-50">
+                    <h1 class="h1-content text-white ms-2" id="max-temp">32c</h1>
+                  </div>
+                  <div>
+                    <img src="media/logo@2x.png" id="todayConditionImg" class="w-75" alt="">
+                  </div>
+                </div>
+                <div class="py-4">
+                <h6 class="card-subtitle text-col2 ms-2 mb-2" id="todayConditionText">Clear</h6>
+                </div>
+                <div class="w-100  spans d-flex justify-content-between">
+                  <div class="ms-2">
+                  <img src="media/icon-umberella.png" class="w-25" alt="">
+                  <span class="px-1 fs-6 text-col" id="humdity">20%</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <img src="media/icon-compass.png" class="w-25" alt="">
+                  <span class="px-1 fs-6 icon2-cstm text-col" id="wind">20%</span>
+                </div>
+                <div>
+                  <img src="media/icon-wind.png" class="w-25" alt="">
+                  <span class="px-1 fs-6 text-col" id="windDirection">East</span>
+                </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <div class="card2" style="width: 22rem; height: 45vh;">
+              <div class="card-body">
+                <h5 class="card-title text-center text-col py-1 div-col2" id="nextDayName">Card title</h5>
+                <div class="card-img d-flex justify-content-center py-3">
+                  <img src="media/logo@2x.png" class="w-25" id="nextDayConditionImg" alt="">
+                </div>
+                <h2 class="text-center py-1 text-white" id="nextDayMax">34.3</h2>
+                <h5 class="text-center py-1 text-col" id="nextDayMin">24.3</h5>
+                <h4 class="text-center py-1 text-col2" id="nextDayconditiontext">cloudy</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <div class="card1" style="width: 22rem; height: 45vh;">
+              <div class="card-body">
+                <h5 class="card-title text-center text-col py-1 div-col" id="afterNextDayName">Card title</h5>
+                <div class="card-img d-flex justify-content-center py-3 ">
+                  <img src="media/logo@2x.png" class="w-25" id="afterNextConditionImg" alt="">
+                </div>
+                <h2 class="text-center py-1 text-white" id="afterNextDayMax">34.3</h2>
+                <h5 class="text-center py-1 text-col" id="afterNextDayMin">24.3</h5>
+                <h4 class="text-center py-1 text-col2" id="afterNextDaycondition">sunny</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
